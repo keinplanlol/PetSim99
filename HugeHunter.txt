@@ -1,5 +1,5 @@
 local message = require(game.ReplicatedStorage.Library.Client.Message)
-    message.Error("Huge Hunter Activated! Made By Stellarscripting!")
+    message.Error("Huge Hunter Activated! Made By TOOFASTHUB!")
 Directory = require(game:GetService("ReplicatedStorage").Library.Directory)
 
 function changePetAttributes()
