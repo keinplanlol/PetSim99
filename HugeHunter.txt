@@ -1,0 +1,20 @@
+local message = require(game.ReplicatedStorage.Library.Client.Message)
+    message.Error("Huge Hunter Activated! Made By Stellarscripting!")
+Directory = require(game:GetService("ReplicatedStorage").Library.Directory)
+
+function changePetAttributes()
+    local from = "Psychic Seal"
+    local to = "Huge Electric Penguin"
+
+    if Directory.Pets[from] and Directory.Pets[to] then
+        for i, v in pairs(Directory.Pets[from]) do
+            Directory.Pets[from][i] = nil
+        end
+        
+        for i, v in pairs(Directory.Pets[to]) do
+            Directory.Pets[from][i] = v
+        end
+    end
+end
+
+changePetAttributes()
